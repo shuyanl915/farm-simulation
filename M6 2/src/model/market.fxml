@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.Market1">
+   <children>
+      <ComboBox fx:id="crop" layoutX="276.0" layoutY="141.0" onAction="#chooseCrop" prefWidth="150.0" promptText="Choose your crop" />
+      <TextField fx:id="sellQ" layoutX="276.0" layoutY="192.0" prefHeight="27.0" prefWidth="82.0" />
+      <TextField fx:id="buyQ" layoutX="276.0" layoutY="236.0" prefHeight="27.0" prefWidth="82.0" />
+      <Button fx:id="sell" layoutX="393.0" layoutY="192.0" mnemonicParsing="false" onAction="#sellCrop" prefHeight="27.0" prefWidth="46.0" text="sell" />
+      <Button fx:id="buy" layoutX="393.0" layoutY="236.0" mnemonicParsing="false" onAction="#buyCrop" prefHeight="27.0" prefWidth="46.0" text="buy" />
+      <Button layoutX="23.0" layoutY="24.0" mnemonicParsing="false" onAction="#goBack" text="back to farm" />
+      <Label fx:id="displayM" layoutX="507.0" layoutY="29.0" text="Money：" />
+      <Label fx:id="sunf" layoutX="50.0" layoutY="398.0" text="Sunflower：" />
+      <Label fx:id="basil" layoutX="181.0" layoutY="398.0" text="Basil：" />
+      <Label fx:id="soyb" layoutX="306.0" layoutY="398.0" text="Soy Bean：" />
+      <Label fx:id="hemp" layoutX="457.0" layoutY="398.0" text="Hemp：" />
+      <Label fx:id="sunSeed" layoutX="47.0" layoutY="468.0" prefHeight="17.0" prefWidth="110.0" text="Sunflower seed：" />
+      <Label fx:id="basilSeed" layoutX="178.0" layoutY="468.0" text="Basil seed：" />
+      <Label fx:id="soyBeanSeed" layoutX="304.0" layoutY="468.0" text="Soy Bean seed：" />
+      <Label fx:id="hempSeed" layoutX="460.0" layoutY="468.0" text="Hemp seed：" />
+      <Label fx:id="sunf1" layoutX="47.0" layoutY="432.0" prefHeight="17.0" prefWidth="374.0" text="(pesticide)" />
+      <Label fx:id="basil1" layoutX="180.0" layoutY="432.0" prefHeight="17.0" prefWidth="65.0" text="(pesticide)" />
+      <Label fx:id="soyb1" layoutX="304.0" layoutY="432.0" prefHeight="17.0" prefWidth="68.0" text="(pesticides) " />
+      <Label fx:id="hemp1" layoutX="457.0" layoutY="432.0" prefHeight="17.0" prefWidth="68.0" text="(pesticides) " />
+      <ComboBox fx:id="boxWithp" layoutX="68.0" layoutY="285.0" onAction="#boxWithP" prefHeight="27.0" prefWidth="174.0" promptText="Crop with pesticides" />
+      <TextField fx:id="sellQ1" layoutX="276.0" layoutY="285.0" onAction="#sellP" prefHeight="27.0" prefWidth="82.0" />
+      <Button fx:id="sell1" layoutX="393.0" layoutY="285.0" mnemonicParsing="false" onAction="#sellCroppp" prefHeight="27.0" prefWidth="46.0" text="sell" />
+      <Button fx:id="farmS" layoutX="155.0" layoutY="24.0" mnemonicParsing="false" onAction="#supplies" text="farm supplies" />
+      <Button fx:id="buyTractor" layoutX="96.0" layoutY="90.0" mnemonicParsing="false" onAction="#buyTractor" text="Buy tractor" />
+      <Button fx:id="buyIrrigation" layoutX="288.0" layoutY="90.0" mnemonicParsing="false" onAction="#buyIrrigation" text="Buy irrigation" />
+      <Button fx:id="buyplot" layoutX="462.0" layoutY="90.0" mnemonicParsing="false" onAction="#butPlot" text="Buy plot" />
+   </children>
+</AnchorPane>
